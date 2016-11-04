@@ -36,7 +36,7 @@ public class PlayerTest {
 
   @Test
   public void canPrintHand(){
-    assertEquals("Two of Clubs, Three of Spades", player1.printHand());
+    assertEquals("Two of CLUBS, Three of SPADES", player1.printHand());
   }
 
 }

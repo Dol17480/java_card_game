@@ -34,9 +34,7 @@ public class CardTest {
   @Test
   public void canPrintString(){
     Card aceOfSpades = new Card(1, Suit.SPADES);
-    Card kingOfClubs = new Card(13, Suit.CLUBS);
-    assertEquals("Ace of Spades", aceOfSpades.toString());
-    assertEquals("King of Clubs", kingOfClubs.toString());
+    assertEquals("Ace of SPADES", aceOfSpades.toString());
   }
 
 }

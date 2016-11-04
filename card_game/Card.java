@@ -27,6 +27,7 @@ public class Card {
     String[] numbers = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
 
     return numbers[this.number - 1] + " of " + suit.name();
+
   }
 
 }
