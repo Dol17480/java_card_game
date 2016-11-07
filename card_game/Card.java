@@ -5,13 +5,15 @@ public class Card {
 
   private final int number;
   private final Suit suit;
+  private final Rank rank;
 
-  public Card(int number, Suit suit){
+  public Card(int number, Suit suit, Rank rank){
     if (number > 13 || number < 1) {
       throw new IllegalArgumentException("Number must be between 1 and 13");
     }
     this.number = number;
     this.suit = suit;
+    this.rank = rank;
   }
 
   public int getNumber(){
@@ -28,6 +30,10 @@ public class Card {
 
     return numbers[this.number - 1] + " of " + suit.name();
 
+  }
+
+  public Rank getRank(){
+    return this.rank;
   }
 
 }

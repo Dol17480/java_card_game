@@ -36,4 +36,14 @@ public class GameTest {
     assertNotNull(player2.getHand()[1]);
   }
 
+  @Test
+  public void countHand(){
+    game.deal();
+    Card player1 + Card player2;
+    assertEquals(5, game.cardCount());
+
+    
+  }
+
+
 }
